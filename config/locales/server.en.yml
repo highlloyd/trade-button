@@ -4,5 +4,5 @@ en:
   topic_trading:
     sold: Sold
     purchased: Purchased
-    exchanged: Exchanged
+    expired: Expired
     cancelled: Cancelled
