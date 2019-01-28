@@ -44,21 +44,21 @@ export default {
       });
     },
 
-    clickExchangedButton(topic) {
-      return bootbox.confirm(I18n.t('topic_trading.mark_as_exchanged_confirm'), I18n.t('no_value'), I18n.t('yes_value'), result => {
+    clickExpiredButton(topic) {
+      return bootbox.confirm(I18n.t('topic_trading.mark_as_expired_confirm'), I18n.t('no_value'), I18n.t('yes_value'), result => {
         if (result) {
-          ajax("/topic/exchanged", {
+          ajax("/topic/expired", {
             type: "PUT",
             data: {
               topic_id: topic.id
             }
           }).then((result) => {
-            topic.set('custom_fields.exchanged_at', result.topic.exchanged_at);
+            topic.set('custom_fields.expired_at', result.topic.expired_at);
             topic.set('title', result.topic.title);
             topic.set('fancy_title', result.topic.fancy_title);
             topic.set('archived', result.topic.archived);
           }).catch(() => {
-            bootbox.alert(I18n.t('topic_trading.error_while_marked_as_exchanged'));
+            bootbox.alert(I18n.t('topic_trading.error_while_marked_as_expired'));
           });
         }
       });
