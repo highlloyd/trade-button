@@ -3,17 +3,17 @@ en:
     topic_trading:
       enable_sold_button: Enable 'Sold' button
       enable_purchased_button: Enable 'Purchased' button
-      enable_exchanged_button: Enable 'Exchanged' button
+      enable_expired_button: Enable 'Expired' button
       enable_cancelled_button: Enable 'Cancelled' button
       sold: Sold
       purchased: Purchased
-      exchanged: Exchanged
+      expired: Expired
       cancelled: Cancelled
       error_while_marked_as_sold: Error with marking topic as 'Sold'
       error_while_marked_as_purchased: Error with marking topic as 'Purchased'
-      error_while_marked_as_exchanged: Error with marking topic as 'Exchanged'
+      error_while_marked_as_expired: Error with marking topic as 'Expired'
       error_while_marked_as_cancelled: Error with marking topic as 'Cancelled'
       mark_as_sold_confirm: Are you sure you want topic to mark topic as 'Sold'?
       mark_as_purchased_confirm: Are you sure you want topic to mark topic as 'Purchased'?
-      mark_as_exchanged_confirm: Are you sure you want topic to mark topic as 'Exchanged'?
+      mark_as_expired_confirm: Are you sure you want topic to mark topic as 'Expired'?
       mark_as_cancelled_confirm: Are you sure you want topic to mark topic as 'Cancelled'?
