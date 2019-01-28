@@ -32,14 +32,14 @@ export default {
         }
       },
 
-      @property('custom_fields.enable_exchanged_button')
-      enable_exchanged_button: {
+      @property('custom_fields.enable_expired_button')
+      enable_expired_button: {
         get(enableField) {
           return enableField === "true";
         },
         set(value) {
           value = value ? "true" : "false";
-          this.set("custom_fields.enable_exchanged_button", value);
+          this.set("custom_fields.enable_expired_button", value);
           return value;
         }
       },
